@@ -34,4 +34,8 @@ class ActionDispatch::IntegrationTest
       }
     }
   end
+
+  def log_out
+    delete logout_path
+  end
 end
